@@ -5,7 +5,7 @@ export const Experience = () => {
   const experiences = [
     {
       company: 'Innova Solutions',
-      logo: 'https://i.postimg.cc/FRZNS3vB/idipuot-QRN-1730958107104-removebg-preview-1.png',
+      logo: 'https://i.postimg.cc/vm0GgGX7/Untitled-design.png',
       position: 'Software Engineer',
       period: 'Jan 2024 - July 2024',
       location: 'Overland Park, KS',
