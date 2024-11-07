@@ -5,7 +5,7 @@ export const Experience = () => {
   const experiences = [
     {
       company: 'Innova Solutions',
-      logo: 'https://media.licdn.com/dms/image/C560BAQHOYm2eErTBtg/company-logo_200_200/0/1630997552278/innova_solutions_logo?e=2147483647&v=beta&t=PxUFoQxMQJUHHQI-HvTEb7CZlZWbC2t5wnQiFqL2Bj4',
+      logo: 'https://i.postimg.cc/FRZNS3vB/idipuot-QRN-1730958107104-removebg-preview-1.png',
       position: 'Software Engineer',
       period: 'Jan 2024 - July 2024',
       location: 'Overland Park, KS',
