@@ -1,11 +1,27 @@
 import React from 'react';
 import { Briefcase, MapPin } from 'lucide-react';
+import shamrockLogo from '/Shamrock_Logo (png).png';
+import { SectionHeading } from './SectionHeading';
 
 export const Experience = () => {
   const experiences = [
     {
+      company: 'Shamrock Roofing & Construction',
+      logo: shamrockLogo,
+      position: 'Software Developer',
+      period: 'Jan 2025 - Present',
+      location: 'Overland Park, KS',
+      responsibilities: [
+        'Managed and maintained the company website built with SvelteKit and Headless WordPress',
+        'development of Trussi AI CRM, an industry-specific platform for roofing contractors',
+        'Executed data migration projects to improve business operations',
+        'Implemented responsive UI designs and optimize user experience',
+        'Collaborated with cross-functional teams to enhance digital solutions'
+      ]
+    },
+    {
       company: 'Innova Solutions',
-      logo: 'https://i.postimg.cc/vm0GgGX7/Untitled-design.png',
+      logo: 'https://innovasolutions.com/wp-content/uploads/2025/01/Logo-New.svg',
       position: 'Software Engineer',
       period: 'Jan 2024 - July 2024',
       location: 'Overland Park, KS',
@@ -35,26 +51,42 @@ export const Experience = () => {
 
   return (
     <section id="experience" className="py-20">
-      <h2 className="text-3xl font-bold mb-12 text-center text-gradient">Professional Experience</h2>
+      <SectionHeading>Professional Experience</SectionHeading>
       <div className="max-w-4xl mx-auto space-y-8">
         {experiences.map((exp, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="group p-8 transition-transform duration-300 hover:scale-[1.02]"
           >
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="w-full md:w-32 flex-shrink-0">
-                <img 
-                  src={exp.logo} 
-                  alt={`${exp.company} logo`}
-                  className="w-full h-auto object-contain filter brightness-200 contrast-200"
-                />
+                {exp.company === 'Innova Solutions' ? (
+                  <div className="bg-white p-2 rounded-md">
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                ) : exp.company === 'Shamrock Roofing & Construction' ? (
+                  <img
+                    src={exp.logo}
+                    alt={`${exp.company} logo`}
+                    className="w-full h-auto object-contain"
+                  />
+                ) : (
+                  <img
+                    src={exp.logo}
+                    alt={`${exp.company} logo`}
+                    className="w-full h-auto object-contain filter brightness-200 contrast-200"
+                  />
+                )}
               </div>
-              
+
               <div className="flex-grow">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-blue-400 group-hover:text-blue-300 
+                    <h3 className="text-xl font-bold text-blue-400 group-hover:text-blue-300
                                  transition-colors duration-300">
                       {exp.company}
                     </h3>
@@ -68,13 +100,13 @@ export const Experience = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <ul className="space-y-2">
                   {exp.responsibilities.map((resp, idx) => (
-                    <li 
+                    <li
                       key={idx}
-                      className="text-gray-300 pl-4 relative before:content-[''] before:absolute 
-                               before:left-0 before:top-[0.6em] before:w-2 before:h-2 
+                      className="text-gray-300 pl-4 relative before:content-[''] before:absolute
+                               before:left-0 before:top-[0.6em] before:w-2 before:h-2
                                before:bg-blue-500 before:rounded-full"
                     >
                       {resp}
