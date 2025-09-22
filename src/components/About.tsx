@@ -8,16 +8,23 @@ export const About = () => {
         <SectionHeading>About Me</SectionHeading>
         <div className="space-y-6">
           <p className="text-gray-300 text-lg leading-relaxed">
-            Hey there! I'm Sai, a software engineer who thinks coding is like solving puzzles, except the puzzles keep updating themselves while you're solving them. Fun, right?
+            👋 Hi, I'm Sai — a software engineer who thrives at the intersection of problem-solving and creativity. I currently work at Shamrock Roofing & Construction in Kansas City, where I build tools and platforms that make real-world operations run smoother — from sales dashboards and project management apps to automation workflows that save hours of manual effort.
           </p>
           
           <p className="text-gray-300 text-lg leading-relaxed">
-            When I'm not turning coffee into code, I'm probably debugging something that worked perfectly fine yesterday (we've all been there). My superpower? Making complex technical problems sound like everyday conversations.
-            I specialize in full-stack development, but my true passion lies in creating elegant solutions that make users go "Wow!" instead of "Why?" Currently exploring the realms of AI and automation, because who doesn't want robot friends?
+            I specialize in full-stack development (JavaScript/TypeScript, Python, SQL, AWS, React Native, SvelteKit, Supabase, and more), and I enjoy turning complex business processes into intuitive, scalable solutions. My projects often mix data pipelines, cloud infrastructure, and automation — because I believe software should feel effortless for the people who use it.
           </p>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            Outside the world of code, you might find me gaming, experimenting with new tech, or explaining to my family why I'm laughing at programming memes.
+            Lately, I've been diving deeper into AI and workflow automation, experimenting with how large language models, Slack integrations, and marketing pipelines can help teams work smarter, not harder.
+          </p>
+
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Outside of work, I'm always learning — whether it's sharpening my DSA and system design skills, building side projects, improving my fitness (yes, I lift 🏋️), or exploring how tech can solve everyday challenges.
+          </p>
+
+          <p className="text-gray-300 text-lg leading-relaxed">
+            If you're into building smart systems, geeking out over new tech, or even just sharing a good programming meme, we'll probably get along.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
