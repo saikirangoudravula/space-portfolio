@@ -47,7 +47,7 @@ export const App: React.FC = () => {
 
           <footer className="bg-black/30 backdrop-blur-sm py-6 mt-20 relative">
             <div className="container mx-auto px-4 text-center text-gray-400">
-              <p>© 2024 Sai Kiran Goud Ravula. Exploring the digital cosmos.</p>
+              <p>© {new Date().getFullYear()} Sai Kiran Goud Ravula. Exploring the digital cosmos.</p>
             </div>
           </footer>
         </div>
