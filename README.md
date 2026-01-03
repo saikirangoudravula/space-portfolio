@@ -82,7 +82,3 @@ MIT License - see LICENSE.md
 3. Commit changes
 4. Push to branch
 5. Open pull request
-
-## 👥 Code of Conduct
-
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)

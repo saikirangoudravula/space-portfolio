@@ -8,11 +8,11 @@ export const About = () => {
         <SectionHeading>About Me</SectionHeading>
         <div className="space-y-6">
           <p className="text-gray-300 text-lg leading-relaxed">
-            I am a Backend Software Engineer specialized in building **fault-tolerant distributed systems** and **automating cloud infrastructure**. My work focuses on solving data consistency challenges at scale, engineering reliability layers for unstable third-party integrations, and eliminating operational toil through internal tooling.
+            I am a Backend Software Engineer specialized in building fault-tolerant distributed systems and automating cloud infrastructure. My work focuses on solving data consistency challenges at scale, engineering reliability layers for unstable third-party integrations, and eliminating operational toil through internal tooling.
           </p>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            I prioritize **correctness over velocity** when dealing with financial data pipelines and **availability** when designing user-facing services. Whether architecting event-driven ETL flows on AWS or containerizing legacy monoliths, I design for failure-ensuring systems degrade gracefully and recover automatically.
+            I prioritize correctness over velocity when dealing with financial data pipelines and availability when designing user-facing services. Whether architecting event-driven ETL flows on AWS or containerizing legacy monoliths, I design for failure-ensuring systems degrade gracefully and recover automatically.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
