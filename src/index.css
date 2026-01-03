@@ -261,3 +261,20 @@
 .glow-border:hover::before {
   opacity: 1;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .star, .shooting-star, .cosmic-dust {
+    animation: none !important;
+  }
+}
+
+html {
+  scroll-padding-top: 80px;
+}

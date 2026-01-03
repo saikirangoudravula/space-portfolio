@@ -22,11 +22,11 @@ export const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 bg-gradient-to-br from-blue-600 to-purple-700 relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmY7c3RvcC1vcGFjaXR5OjAuMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZjtzdG9wLW9wYWNpdHk6MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0wIDBoMjAwdjIwMEgweiIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg==')] opacity-20 animate-pulse"></div>
-              
+
               <h3 className="text-2xl font-bold mb-6 relative">Contact Information</h3>
               <div className="space-y-6 relative">
-                <a 
-                  href="mailto:saikirangoud2901@gmail.com" 
+                <a
+                  href="mailto:saikirangoud2901@gmail.com"
                   className="flex items-center gap-4 transform hover:translate-x-2 transition-all duration-300"
                 >
                   <Mail className="w-6 h-6 animate-pulse" />
@@ -34,21 +34,11 @@ export const Contact = () => {
                     saikirangoud2901@gmail.com
                   </span>
                 </a>
-                
-                <a 
-                  href="tel:913-563-0506" 
-                  className="flex items-center gap-4 transform hover:translate-x-2 transition-all duration-300"
-                >
-                  <Phone className="w-6 h-6 animate-pulse" />
-                  <span className="hover:text-blue-200 transition-colors">
-                    913-563-0506
-                  </span>
-                </a>
-                
-                <a 
-                  href="https://www.linkedin.com/in/sai-kiran-goud-ravula/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://www.linkedin.com/in/sai-kiran-goud-ravula/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 transform hover:translate-x-2 transition-all duration-300"
                 >
                   <Linkedin className="w-6 h-6 animate-pulse" />
@@ -56,11 +46,11 @@ export const Contact = () => {
                     LinkedIn Profile
                   </span>
                 </a>
-                
-                <a 
-                  href="https://www.google.com/maps/place/Overland+Park,+KS" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://www.google.com/maps/place/Overland+Park,+KS"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 transform hover:translate-x-2 transition-all duration-300"
                 >
                   <MapPin className="w-6 h-6 animate-pulse" />
@@ -70,20 +60,20 @@ export const Contact = () => {
                 </a>
               </div>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="p-8 space-y-6">
               {submitError && (
                 <div className="p-3 bg-red-900/50 border border-red-500 rounded-lg text-red-200 text-sm">
                   {submitError}
                 </div>
               )}
-              
+
               {isSuccess && (
                 <div className="p-3 bg-green-900/50 border border-green-500 rounded-lg text-green-200 text-sm">
                   Message sent successfully! I'll get back to you soon.
                 </div>
               )}
-              
+
               <div className="transform hover:translate-y-[-2px] transition-all duration-300">
                 <label className="block text-sm font-medium mb-2">Name</label>
                 <input
@@ -91,9 +81,8 @@ export const Contact = () => {
                   value={formData.name}
                   onChange={(e) => handleChange('name', e.target.value)}
                   className={`w-full px-4 py-2 bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500
-                           transition-all duration-300 hover:bg-gray-600 ${
-                             errors.name ? 'border-red-500 focus:ring-red-500' : ''
-                           }`}
+                           transition-all duration-300 hover:bg-gray-600 ${errors.name ? 'border-red-500 focus:ring-red-500' : ''
+                    }`}
                   placeholder="Your name"
                   disabled={isLoading}
                 />
@@ -101,7 +90,7 @@ export const Contact = () => {
                   <p className="mt-1 text-sm text-red-400">{errors.name}</p>
                 )}
               </div>
-              
+
               <div className="transform hover:translate-y-[-2px] transition-all duration-300">
                 <label className="block text-sm font-medium mb-2">Email</label>
                 <input
@@ -109,9 +98,8 @@ export const Contact = () => {
                   value={formData.email}
                   onChange={(e) => handleChange('email', e.target.value)}
                   className={`w-full px-4 py-2 bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500
-                           transition-all duration-300 hover:bg-gray-600 ${
-                             errors.email ? 'border-red-500 focus:ring-red-500' : ''
-                           }`}
+                           transition-all duration-300 hover:bg-gray-600 ${errors.email ? 'border-red-500 focus:ring-red-500' : ''
+                    }`}
                   placeholder="your@email.com"
                   disabled={isLoading}
                 />
@@ -119,16 +107,15 @@ export const Contact = () => {
                   <p className="mt-1 text-sm text-red-400">{errors.email}</p>
                 )}
               </div>
-              
+
               <div className="transform hover:translate-y-[-2px] transition-all duration-300">
                 <label className="block text-sm font-medium mb-2">Message</label>
                 <textarea
                   value={formData.message}
                   onChange={(e) => handleChange('message', e.target.value)}
                   className={`w-full px-4 py-2 bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500
-                           transition-all duration-300 hover:bg-gray-600 h-32 resize-none ${
-                             errors.message ? 'border-red-500 focus:ring-red-500' : ''
-                           }`}
+                           transition-all duration-300 hover:bg-gray-600 h-32 resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : ''
+                    }`}
                   placeholder="Your message..."
                   disabled={isLoading}
                 ></textarea>
@@ -136,7 +123,7 @@ export const Contact = () => {
                   <p className="mt-1 text-sm text-red-400">{errors.message}</p>
                 )}
               </div>
-              
+
               <button
                 type="submit"
                 disabled={isLoading}

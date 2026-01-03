@@ -12,25 +12,34 @@ export const Experience = () => {
       period: 'Jan 2025 - Present',
       location: 'Overland Park, KS',
       responsibilities: [
-        'Managed and maintained the company website built with SvelteKit and Headless WordPress',
-        'development of Trussi AI CRM, an industry-specific platform for roofing contractors',
-        'Executed data migration projects to improve business operations',
-        'Implemented responsive UI designs and optimize user experience',
-        'Collaborated with cross-functional teams to enhance digital solutions'
+        'Architected and owned resilient, event-driven ETL pipelines on AWS (ECS, Lambda) syncing complex financial and operational data across 17+ locations, ensuring near real-time data freshness and strong data consistency guarantees.',
+        'Engineered fault-tolerant reliability layers using circuit breakers, rate limiting, and exponential backoff to harden unstable third-party integrations, reducing external dependency failures by ~99%.',
+        'Modernized cloud infrastructure by containerizing Python and Node.js services with Docker and AWS ECS, and automating CI/CD via GitHub Actions, cutting deployment time by ~40%.',
+        'Built high-performance internal dashboards and Slack-based tools providing real-time visibility into sales, fleet, and financial metrics, eliminating manual reporting workflows.'
+      ]
+    },
+    {
+      company: 'Quick Assert Consulting, Inc',
+      logo: 'https://ui-avatars.com/api/?name=Quick+Assert&background=0D8ABC&color=fff',
+      position: 'Software Developer',
+      period: 'Sep 2024 - Dec 2024',
+      location: 'Kansas City, MO',
+      responsibilities: [
+        'Delivered core backend and automation features for internal analytics and reporting tools using Python and Flask, contributing production-ready functionality within a 3-month engagement.',
+        'Built reliable data ingestion and transformation logic with SQL-based deduplication and timezone handling, ensuring accurate daily and weekly reporting for distributed sales teams.',
+        'Integrated lightweight CI/CD automation with GitHub Actions, enabling faster iteration and consistent deployments in a fast-paced consulting environment.'
       ]
     },
     {
       company: 'Innova Solutions',
       logo: 'https://innovasolutions.com/wp-content/uploads/2025/01/Logo-New.svg',
       position: 'Software Engineer',
-      period: 'Jan 2024 - July 2024',
+      period: 'June 2024 - July 2024',
       location: 'Overland Park, KS',
       responsibilities: [
-        'Redesigned Web Applications for improved scalability',
-        'Developed responsive UIs using ReactJS and Node.js',
-        'Implemented backend services with Java Spring Boot',
-        'Created CI/CD pipelines using Azure DevOps',
-        'Designed and implemented RESTful APIs'
+        'Built and maintained secure, scalable REST APIs using Java and Spring Boot to support high-volume telecom data flows, focusing on throughput and fault tolerance.',
+        'Automated build and deployment pipelines with Azure DevOps, reducing release cycles by ~30% and improving deployment consistency.',
+        'Implemented unit and integration testing with JUnit and Postman, contributing to highly stable releases with minimal production defects.'
       ]
     },
     {
@@ -40,11 +49,10 @@ export const Experience = () => {
       period: 'Oct 2021 - June 2022',
       location: 'Hyderabad, India',
       responsibilities: [
-        'Developed healthcare applications for Cigna',
-        'Contributed to microservices architecture transition',
-        'Created full-stack solutions with Java backend',
-        'Managed projects using Agile methodology',
-        'Optimized database performance'
+        'Contributed to the migration of large-scale healthcare applications from monolithic architectures to Java and Spring Boot-based microservices.',
+        'Built and enhanced backend components for systems such as Member Portals and Claims APIs, supporting critical healthcare workflows.',
+        'Wrote and optimized complex SQL queries for high-volume transactional systems, improving data retrieval performance.',
+        'Collaborated in Agile Scrum teams using Jira and Git, participating in code reviews and supporting QA and release processes.'
       ]
     }
   ];
@@ -53,6 +61,10 @@ export const Experience = () => {
     <section id="experience" className="py-20">
       <SectionHeading>Professional Experience</SectionHeading>
       <div className="max-w-4xl mx-auto space-y-8">
+        <p className="text-gray-400 text-center mb-8 -mt-6">
+          Selected production systems I've owned or contributed to:
+        </p>
+
         {experiences.map((exp, index) => (
           <div
             key={index}
