@@ -21,7 +21,7 @@ export const Hero = () => {
   }, []);
 
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/1uj6G2NReGYVTSP0YV6TlYfsWd_Kl_3yu/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1ZTBgeUrNETSbwYuT_OGUmzyqXfvxEpWj/view?usp=sharing', '_blank');
   };
 
   return (
